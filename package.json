@@ -6,6 +6,9 @@
   "scripts": {
     "build": "mkdir -p build/standalone/node_modules/next && cp server.js build/standalone/"
   },
+  "dependencies": {
+    "next": "latest"
+  },
   "author": "",
   "license": "ISC"
 }
