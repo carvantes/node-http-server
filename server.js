@@ -30,7 +30,7 @@ const server = http.createServer(async (req, res) => {
     req.on("end", () => {
       const parts = {
         path: url.pathname,
-        rawQueryString: url.search,
+        queryString: url.search,
         queryParams,
         method: req.method,
         headers: req.headers,
