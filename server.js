@@ -52,6 +52,8 @@ const server = http.createServer(async (req, res) => {
 const currentPort = parseInt(process.env.PORT, 10) || 3000;
 const hostname = process.env.HOSTNAME || "localhost";
 
+console.log("Environment variables", JSON.stringify(process.env));
+
 server.listen(currentPort, (err) => {
   if (err) {
     console.error("Failed to start server", err);
