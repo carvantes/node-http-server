@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "framework": { "name": "node", "version": "18" },
+  "framework": { "name": "node", "version": "18.17.0" },
   "routes": [
     {
       "path": "/*",
