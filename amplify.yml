@@ -3,7 +3,7 @@ frontend:
   phases:
     build:
       commands:
-        - npm run build
+        - echo "no op build"
   artifacts:
     baseDirectory: build
     files:
