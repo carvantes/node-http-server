@@ -5,6 +5,6 @@ frontend:
       commands:
         - echo "no op build"
   artifacts:
-    baseDirectory: build
+    baseDirectory: .amplify-hosting
     files:
       - '**/*'
