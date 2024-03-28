@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "framework": { "name": "node", "version": "1" },
+  "framework": { "name": "node", "version": "18" },
   "routes": [
     {
       "path": "/*",
@@ -14,7 +14,7 @@
     {
       "name": "default",
       "runtime": "nodejs18.x",
-      "entrypoint": "index.cjs"
+      "entrypoint": "server.js"
     }
   ]
 }
