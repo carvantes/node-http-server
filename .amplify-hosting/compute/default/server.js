@@ -38,6 +38,11 @@ const server = http.createServer(async (req, res) => {
         body: tryParse(body) || body,
       };
 
+      const cacheControl = req.headers["cache-control"];
+      if (cacheControl) {
+          res.setHeader("Cache-Control", cacheControl);
+      }
+
       console.log("Received request", JSON.stringify(parts));
       res.setHeader("Content-Type", "application/json");
       res.end(JSON.stringify(parts));
